@@ -66,6 +66,12 @@
   width: 20px;
   height: 100% !important;
   vertical-align: middle;
+  align-items: center !important;
+  justify-content: center !important;
+  top: 0px !important;
+  position: absolute !important;
+  right: 25% !important;
+  top: 30% !important;
 }
 [id^="date-picker-wrapper_"] {
   background: none !important;
@@ -218,10 +224,38 @@ li::hover {
 }
 
 .lightpick__day.is-available.is-start-date.is-in-range::before{
-  content: 'x';
-  position: absolute;
-  width: 100% !important;
+  /* content: 'x'; */
+  /* position: absolute; */
+  /* width: 100% !important;
   height: 100% !important;
   border-radius: 5rem !important;
-  background: white !important;
+  background: white !important; */
+}
+
+.guesty-root-element.small-size.guesty-widget__container {
+  flex-direction: column !important;
+  /* background: red !important; */
+  display: flex !important;
+  height: 400px !important;
+}
+
+
+@media (max-width: 768px) {
+  .guesty-widget__item {
+  width: 100% !important;
+  margin: 0px auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  max-width: 320px !important;
+}
+}
+
+.guesty-root-element.small-size.guesty-widget__container .guesty-widget__item:last-child button{
+ width: 100% !important;
+ max-width: 260px !important;
+ display: flex !important;
+ align-items: center !important;
+ justify-content: center !important;
+ margin: 0px auto !important;
 }
