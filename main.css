@@ -13,7 +13,10 @@
   font-size: 1rem !important;
   font-weight: 500 !important;  
 }
-
+.elementor-widget-container{
+  display: flex !important;
+  justify-content: center !important;
+}
 .guesty-widget__container {
   background: #eeede5 !important;
   width: 100% !important;
