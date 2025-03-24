@@ -7,9 +7,8 @@
 
 } */
 
-
 .guesty-widget__container {
-  background: #EEEDE5 !important;
+  background: #eeede5 !important;
   width: 100% !important;
   max-width: 960px !important;
   height: 70px !important;
@@ -23,7 +22,7 @@
 }
 
 @media (max-width: 768px) {
-.guesty-widget__container {
+  .guesty-widget__container {
     /* background: red !important; */
     width: 100% !important;
     max-width: 350px !important;
@@ -49,7 +48,7 @@
 /* Botón de búsqueda */
 .guesty-search-submit-btn {
   position: relative !important;
-  background-color: #4D3B2D !important;
+  background-color: #4d3b2d !important;
   color: #ffffff !important;
   border: none !important;
   border-radius: 1.5rem !important;
@@ -59,17 +58,12 @@
   gap: 0.5rem !important;
   cursor: pointer !important;
   width: 100% !important;
-  max-width: 127px !important;
+  max-width: 327px !important;
   height: 100% !important;
   max-height: 45px !important;
   border-radius: 5rem !important;
   gap: 10px !important;
   padding: 1.5rem !important;
-  /* padding-top: 10px !important;
-  padding-right: 24px !important;
-  padding-bottom: 10px !important;
-  padding-left: 24px !important; */
-
 }
 
 .guesty-search-submit-btn::after {
@@ -102,25 +96,23 @@
   padding-right: 24px !important;
   padding-bottom: 10px !important;
   padding-left: 24px !important;
-  color: #4D3B2D !important;
-  border: 1px solid #CACACA !important;
+  color: #4d3b2d !important;
+  border: 1px solid #cacaca !important;
   box-shadow: 0px 4px 16px 0px #00000029;
-  /* overflow: hidden !important; */
 }
 
 /* Icono dropdown del select de guests */
-.guesty-root-element .selectr-selected {  
+.guesty-root-element .selectr-selected {
   overflow: hidden !important;
   border-radius: 5rem !important;
-  border: 1px solid #CACACA !important;
+  border: 1px solid #cacaca !important;
   box-shadow: 0px 4px 16px 0px #00000029;
   background-color: #fff !important;
   font-size: 1rem !important;
   width: 100px !important;
   max-width: 650px !important;
   height: 100% !important;
-  max-height: 108px !important;  
-  
+  max-height: 108px !important;
 }
 .guesty-root-element .has-selected .selectr-label {
   height: 100% !important;
@@ -130,15 +122,17 @@
   max-width: 650px !important;
 }
 
-.guesty-root-element #guesty-search-widget__datepicker [id^=date-picker-wrapper] input {  
+.guesty-root-element
+  #guesty-search-widget__datepicker
+  [id^="date-picker-wrapper"]
+  input {
   height: 100% !important;
   width: 100% !important;
   max-width: 350px !important;
   max-height: 18px !important;
 }
 
-
-ul.selectr-options{
+ul.selectr-options {
   background-color: #fff !important;
   margin: 0px !important;
   padding: 0px !important;
@@ -148,7 +142,7 @@ ul.selectr-options{
   width: 100% !important;
   appearance: none; /* Oculta el estilo por defecto */
 }
-.selectr-options-container .selectr-options{
+.selectr-options-container .selectr-options {
   padding: 0px !important;
   border: none !important;
 }
@@ -172,31 +166,41 @@ li::hover {
 }
 
 /* Input del calendario, input interno fecha de entrada */
-.guesty-root-element #guesty-search-widget__datepicker [id^=date-picker-wrapper] input {
+.guesty-root-element
+  #guesty-search-widget__datepicker
+  [id^="date-picker-wrapper"]
+  input {
   background: none !important;
   height: 100% !important;
 }
 
 /* Icono del calendario, primer elemento */
-.guesty-root-element #guesty-search-widget__datepicker [id^=date-picker-wrapper]::before {
+.guesty-root-element
+  #guesty-search-widget__datepicker
+  [id^="date-picker-wrapper"]::before {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 5V4a1 1 0 1 1 2 0v1h3V4a1 1 0 1 1 2 0v1h3V4a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v2H3V7a2 2 0 0 1 2-2h1ZM3 19v-8h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm5-6a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8Z"/></svg>');
   display: inline-block;
   width: 24px;
   height: 24px;
   vertical-align: middle;
-  
 }
 
 /* Elementos del calendario */
-.guesty-root-element #guesty-search-widget__datepicker [id^=date-picker-wrapper]:nth-child(1),
-.guesty-root-element #guesty-search-widget__datepicker [id^=date-picker-wrapper]:nth-child(2) {
+.guesty-root-element
+  #guesty-search-widget__datepicker
+  [id^="date-picker-wrapper"]:nth-child(1),
+.guesty-root-element
+  #guesty-search-widget__datepicker
+  [id^="date-picker-wrapper"]:nth-child(2) {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
 }
 
 /* Checkout icon */
-.guesty-root-element #guesty-search-widget__datepicker [id^=date-picker-wrapper]:nth-child(2)::before {
+.guesty-root-element
+  #guesty-search-widget__datepicker
+  [id^="date-picker-wrapper"]:nth-child(2)::before {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>');
   display: inline-block;
   width: 30px;
@@ -204,7 +208,7 @@ li::hover {
   vertical-align: middle;
 }
 
-.guesty-widget__item.guests-dropdown{
+.guesty-widget__item.guests-dropdown {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -217,6 +221,10 @@ li::hover {
 .lightpick.lightpick--2-columns {
   margin-top: 0.5rem !important;
 }
+.lightpick.lightpick--1-columns {
+  margin-top: 1.5rem !important;
+  margin-left: -1.1rem !important;
+}
 
 .guesty-root-element .lightpick .lightpick__select {
   border: none !important;
@@ -224,18 +232,18 @@ li::hover {
 }
 
 .lightpick__day.is-available.is-in-range,
-.lightpick__day.is-available.is-in-range.is-flipped{
-  background: #EEEDE5 !important;
+.lightpick__day.is-available.is-in-range.is-flipped {
+  background: #eeede5 !important;
   border: none !important;
 }
 
 .lightpick__day.is-available.is-end-date.is-in-range,
-.lightpick__day.is-available.is-start-date.is-in-range{
-  background: #4D3B2D !important;
+.lightpick__day.is-available.is-start-date.is-in-range {
+  background: #4d3b2d !important;
   position: relative !important;
 }
 
-.lightpick__day.is-available.is-start-date.is-in-range::before{
+.lightpick__day.is-available.is-start-date.is-in-range::before {
   /* content: 'x'; */
   /* position: absolute; */
   /* width: 100% !important;
@@ -251,23 +259,46 @@ li::hover {
   height: 400px !important;
 }
 
-
 @media (max-width: 768px) {
   .guesty-widget__item {
-  width: 100% !important;
-  margin: 0px auto !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  max-width: 320px !important;
-}
+    width: 100% !important;
+    margin: 0px auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    max-width: 320px !important;
+  }
+  .guesty-root-element.small-size.guesty-widget__container
+    .guesty-widget__item:last-child
+    button {
+    width: 100% !important;
+    max-width: 260px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0px auto !important;
+  }
 }
 
-.guesty-root-element.small-size.guesty-widget__container .guesty-widget__item:last-child button{
- width: 100% !important;
- max-width: 260px !important;
- display: flex !important;
- align-items: center !important;
- justify-content: center !important;
- margin: 0px auto !important;
+div.guesty-root-element .selectr-selected::before {
+  right: 10% !important;
+}
+
+@media screen and (min-width: 768px) {
+  .guesty-search-submit-btn{
+  }
+  .guesty-widget__item:last-child {
+    width: 320px !important;
+    width: 100% !important;
+    max-width: 140px !important;
+  }
+  .guesty-search-submit-btn::after {
+    right: 15% !important;
+  }
+
+  .guesty-root-element.guesty-search-submit-btn {
+    background: pink !important;
+    width: 100% !important;
+    max-width: 520px !important;
+  }
 }
