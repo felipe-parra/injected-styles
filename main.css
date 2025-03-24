@@ -1,19 +1,26 @@
-/* 
+
 :root {
+  position: relative !important;
+  height: auto !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0px auto !important;
+  margin-left: -.3rem !important;
   background: #444 !important;
   font-family: 'Poppins', sans-serif !important;
   font-size: 1rem !important;
   font-weight: 500 !important;  
-
-} */
+}
 
 .guesty-widget__container {
   background: #eeede5 !important;
   width: 100% !important;
-  max-width: 960px !important;
+  max-width: 720px !important;
   height: 70px !important;
   border-radius: 5rem !important;
-  padding: 0.5rem 1rem !important;
+  padding: 0.5rem 2.5rem !important;
   box-shadow: 0 4px 12px #000000 !important;
   display: flex !important;
   align-items: center !important;
@@ -23,7 +30,6 @@
 
 @media (max-width: 768px) {
   .guesty-widget__container {
-    /* background: red !important; */
     width: 100% !important;
     max-width: 350px !important;
     height: 100% !important;
@@ -285,8 +291,6 @@ div.guesty-root-element .selectr-selected::before {
 }
 
 @media screen and (min-width: 768px) {
-  .guesty-search-submit-btn{
-  }
   .guesty-widget__item:last-child {
     width: 320px !important;
     width: 100% !important;
@@ -297,7 +301,7 @@ div.guesty-root-element .selectr-selected::before {
   }
 
   .guesty-root-element.guesty-search-submit-btn {
-    background: pink !important;
+    /* background: pink !important; */
     width: 100% !important;
     max-width: 520px !important;
   }
