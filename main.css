@@ -1,11 +1,12 @@
-
+/* 
 :root {
   background: #444 !important;
   font-family: 'Poppins', sans-serif !important;
   font-size: 1rem !important;
   font-weight: 500 !important;  
 
-}
+} */
+
 
 .guesty-widget__container {
   background: #EEEDE5 !important;
@@ -19,6 +20,17 @@
   align-items: center !important;
   justify-content: center !important;
   gap: 1.5rem !important;
+}
+
+@media (max-width: 768px) {
+.guesty-widget__container {
+    /* background: red !important; */
+    width: 100% !important;
+    max-width: 350px !important;
+    height: 100% !important;
+    max-height: 325px !important;
+    margin: 0px auto !important;
+  }
 }
 
 /* Mostrar íconos como parte del texto del botón */
