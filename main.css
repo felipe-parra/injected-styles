@@ -1,173 +1,227 @@
-/* Contenedor principal */
+
+:root {
+  background: #444 !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;  
+
+}
+
 .guesty-widget__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #eae5db !important;
-  padding: 20px 20px !important;
-  border-radius: 50px !important;
+  background: #EEEDE5 !important;
   width: 100% !important;
-  max-width: 800px !important;
-  margin: auto !important;
-}
- 
-
-/* Selector de huéspedes */
-.guests-dropdown {
-  display: flex;
-  align-items: center;
-  background: transparent !important;
-  padding: 10px;
-}
-
-/* Botón de búsqueda */
-.guesty-search-submit-btn {
-  background: black !important;
-  color: white !important;
-  font-weight: bold !important;
-  border-radius: 20px !important;
-  padding: 8px 15px !important;
-}
-
-/* ESTILOS DEL CALENDARIO */
-.lightpick {
-  background: pink !important;
-  border-radius: 10px !important;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2) !important;
-  padding: 10px !important;
-}
-
-/* Estilos de los días */
-.lightpick__day {
-  width: 35px !important;
-  height: 35px !important;
+  max-width: 960px !important;
+  height: 70px !important;
+  border-radius: 5rem !important;
+  padding: 0.5rem 1rem !important;
+  box-shadow: 0 4px 12px #000000 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  font-size: 14px !important;
-  border-radius: 50% !important;
-  transition: background 0.2s ease-in-out !important;
+  gap: 1.5rem !important;
+}
+
+/* Mostrar íconos como parte del texto del botón */
+.selectr-label::before {
+  content: url('data:image/svg+xml;utf8,<svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zM8 11c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V20h14v-3.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V20h6v-3.5c0-2.33-4.67-3.5-7-3.5z"/></svg>');
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.guesty-root-element .cities-dropdown {
+  display: none !important;
+}
+/* Botón de búsqueda */
+.guesty-search-submit-btn {
+  position: relative !important;
+  background-color: #4D3B2D !important;
+  color: #ffffff !important;
   border: none !important;
-  background: transparent !important;
-  color: #333 !important;
-}
-div.lightpick__day.is-available.is-in-range.is-flipped{
-  background: rgba(238, 237, 229, 1)!important;
-}
-/* Días seleccionados */
-div.lightpick__day.is-available.is-in-range.is-flipped.is-start-date {
-  background: rgba(77, 59, 45, 1) !important;
-  color: white !important;
-  font-weight: 300 !important;
-}
-div.guesty-root-element .lightpick__day.is-start-date, .guesty-root-element .lightpick__day.is-end-date, .guesty-root-element .lightpick__day.is-start-date:hover, .guesty-root-element .lightpick__day.is-end-date:hover  {
-  background: rgba(77, 59, 45, 1) !important;
-  color: white !important;
-  font-weight: 300 !important;
-  border-radius: 50% !important;
-}
-
-
-/* Días dentro del rango */
-div.lightpick__day.is-in-range {
-  background: rgba(238, 237, 229, 1)!important;
-}
-
-/* Ajuste del espaciado entre días */
-.lightpick__day.is-available {
-  border-radius:0% !important;
-}
-.guesty-root-element .lightpick__days {
-  padding: 0px !important;
-}
-/* Flechas de navegación */
-.lightpick__previous-action,
-.lightpick__next-action {
-  background: none !important;
-  border: none !important;
-  font-size: 18px !important;
+  border-radius: 1.5rem !important;
+  padding: 0.6rem 1.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
   cursor: pointer !important;
+  width: 100% !important;
+  max-width: 127px !important;
+  height: 100% !important;
+  max-height: 45px !important;
+  border-radius: 5rem !important;
+  gap: 10px !important;
+  padding: 1.5rem !important;
+  /* padding-top: 10px !important;
+  padding-right: 24px !important;
+  padding-bottom: 10px !important;
+  padding-left: 24px !important; */
+
 }
 
-/* Organización de los meses en dos columnas */
-.lightpick__months {
-  display: flex !important;
-  justify-content: space-between !important;
+.guesty-search-submit-btn::after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M10 2a8 8 0 105.293 14.293l5.707 5.707 1.414-1.414-5.707-5.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>');
+  display: inline-block;
+  width: 20px;
+  height: 100% !important;
+  vertical-align: middle;
+}
+[id^="date-picker-wrapper_"] {
+  background: none !important;
 }
 
-/* Títulos de los meses */
-.lightpick__month-title {
-  font-size: 18px !important;
-  font-weight: bold !important;
-  text-align: center !important;
+[id="guesty-search-widget__datepicker"] {
+  background: #fff !important;
+  width: 100% !important;
+  max-width: 350px !important;
+  height: 100% !important;
+  max-height: 45px !important;
+  border-radius: 5rem !important;
+  gap: 8px !important;
+  border-width: 1px !important;
+  padding-top: 10px !important;
+  padding-right: 24px !important;
+  padding-bottom: 10px !important;
+  padding-left: 24px !important;
+  color: #4D3B2D !important;
+  border: 1px solid #CACACA !important;
+  box-shadow: 0px 4px 16px 0px #00000029;
+  /* overflow: hidden !important; */
 }
 
-/* Organización del calendario */
-.lightpick__days-of-the-week {
-  display: flex !important;
-  justify-content: space-between !important;
-  font-weight: bold !important;
+/* Icono dropdown del select de guests */
+.guesty-root-element .selectr-selected {  
+  overflow: hidden !important;
+  border-radius: 5rem !important;
+  border: 1px solid #CACACA !important;
+  box-shadow: 0px 4px 16px 0px #00000029;
+  background-color: #fff !important;
+  font-size: 1rem !important;
+  width: 100px !important;
+  max-width: 650px !important;
+  height: 100% !important;
+  max-height: 108px !important;  
+  
+}
+.guesty-root-element .has-selected .selectr-label {
+  height: 100% !important;
+  max-height: 108px !important;
+  background-color: none !important;
+  width: 100% !important;
+  max-width: 650px !important;
 }
 
-/* Ajuste del espaciado entre elementos */
-.lightpick__inner {
-  padding: 10px !important;
+.guesty-root-element #guesty-search-widget__datepicker [id^=date-picker-wrapper] input {  
+  height: 100% !important;
+  width: 100% !important;
+  max-width: 350px !important;
+  max-height: 18px !important;
 }
-.guesty-widget__item {
-  background-color: rgba(255, 255, 255, 1) !important;
-  border-radius: 50px !important;
-}
-section.lightpick.lightpick--2-columns {
-  background-color: red!important;
+
+
+ul.selectr-options{
+  background-color: #fff !important;
+  margin: 0px !important;
   padding: 0px !important;
+  border: none !important;
+  padding: 0.75rem 1.25rem !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  appearance: none; /* Oculta el estilo por defecto */
+}
+.selectr-options-container .selectr-options{
+  padding: 0px !important;
+  border: none !important;
+}
+ul {
+  border: none !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+li::hover {
+  background-color: red !important;
 }
 
 .guesty-root-element .selectr-selected {
-  padding: 0px !important;
-  height: auto !important;
-}
-.lightpick__toolbar{
-  background: transparent !important;
+  font-size: 1rem !important;
+  background-color: none !important;
+  padding: 1rem !important;
   width: 100% !important;
-  padding: 0px !important;
-  max-width: 800px !important;
+  max-width: 650px !important;
+  height: 100% !important;
+  max-height: 108px !important;
 }
 
-.lightpick__previous-action, .lightpick__next-action{
-  color: black !important;
-  font-weight: bold !important;
-  border: 1px solid rgba(228, 231, 231, 1) !important;
-  border-radius: 30% !important;
+/* Input del calendario, input interno fecha de entrada */
+.guesty-root-element #guesty-search-widget__datepicker [id^=date-picker-wrapper] input {
+  background: none !important;
+  height: 100% !important;
 }
 
-.lightpick__day.is-disabled{
-  background: transparent !important;
-  color: rgba(228, 231, 231, 1) !important;
-  border-radius: 0% !important;
-}
-
-.lightpick__days{
-  background: transparent !important;
+/* Icono del calendario, primer elemento */
+.guesty-root-element #guesty-search-widget__datepicker [id^=date-picker-wrapper]::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 5V4a1 1 0 1 1 2 0v1h3V4a1 1 0 1 1 2 0v1h3V4a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v2H3V7a2 2 0 0 1 2-2h1ZM3 19v-8h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm5-6a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8Z"/></svg>');
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
   
-  border-radius: 10px !important;
-  overflow: hidden !important;
 }
 
-.guesty-root-element .lightpick__days {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 0; /* Asegura que no haya separación */
-  padding: 0;
-  margin: 0;
-  border-collapse: collapse; /* Opcional, útil si hay bordes */
+/* Elementos del calendario */
+.guesty-root-element #guesty-search-widget__datepicker [id^=date-picker-wrapper]:nth-child(1),
+.guesty-root-element #guesty-search-widget__datepicker [id^=date-picker-wrapper]:nth-child(2) {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
-.guesty-root-element .lightpick__days{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Asegura que el tamaño no cambie con los bordes */
-  border: 1px solid rgba(228, 231, 231, 1) !important;
+/* Checkout icon */
+.guesty-root-element #guesty-search-widget__datepicker [id^=date-picker-wrapper]:nth-child(2)::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>');
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
 }
-:root{
- background-color: black !important;
+
+.guesty-widget__item.guests-dropdown{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 5rem !important;
+
+  height: 100% !important;
+  max-height: 55px !important;
+}
+
+.lightpick.lightpick--2-columns {
+  margin-top: 0.5rem !important;
+}
+
+.guesty-root-element .lightpick .lightpick__select {
+  border: none !important;
+  padding: 0px !important;
+}
+
+.lightpick__day.is-available.is-in-range,
+.lightpick__day.is-available.is-in-range.is-flipped{
+  background: #EEEDE5 !important;
+  border: none !important;
+}
+
+.lightpick__day.is-available.is-end-date.is-in-range,
+.lightpick__day.is-available.is-start-date.is-in-range{
+  background: #4D3B2D !important;
+  position: relative !important;
+}
+
+.lightpick__day.is-available.is-start-date.is-in-range::before{
+  content: 'x';
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 5rem !important;
+  background: white !important;
 }
