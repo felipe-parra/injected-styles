@@ -1,3 +1,4 @@
+/* Last update: 25/03/2025 */
 
 :root {
   position: relative !important;
@@ -35,7 +36,43 @@
   margin-right: 6px;
   vertical-align: middle;
 }
+/* Icono del botón de búsqueda */
+.guesty-search-submit-btn::after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M10 2a8 8 0 105.293 14.293l5.707 5.707 1.414-1.414-5.707-5.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>');
+  display: inline-block;
+  width: 20px;
+  height: 100% !important;
+  vertical-align: middle;
+  align-items: center !important;
+  justify-content: center !important;
+  top: 0px !important;
+  position: absolute !important;
+  right: 25% !important;
+  top: 30% !important;
+}
 
+/* Icono del calendario, primer elemento */
+.guesty-root-element
+  #guesty-search-widget__datepicker
+  [id^="date-picker-wrapper"]::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 5V4a1 1 0 1 1 2 0v1h3V4a1 1 0 1 1 2 0v1h3V4a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v2H3V7a2 2 0 0 1 2-2h1ZM3 19v-8h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm5-6a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8Z"/></svg>');
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  align-items: center !important;
+  justify-content: center !important;
+}
+/* Icono del calendario, segundo elemento */
+.guesty-root-element
+  #guesty-search-widget__datepicker
+  [id^="date-picker-wrapper"]:nth-child(2)::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>');
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
 .guesty-root-element .cities-dropdown {
   display: none !important;
 }
@@ -60,19 +97,7 @@
   padding: 1.5rem !important;
 }
 
-.guesty-search-submit-btn::after {
-  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M10 2a8 8 0 105.293 14.293l5.707 5.707 1.414-1.414-5.707-5.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>');
-  display: inline-block;
-  width: 20px;
-  height: 100% !important;
-  vertical-align: middle;
-  align-items: center !important;
-  justify-content: center !important;
-  top: 0px !important;
-  position: absolute !important;
-  right: 25% !important;
-  top: 30% !important;
-}
+
 [id^="date-picker-wrapper_"] {
   background: none !important;
 }
@@ -168,16 +193,7 @@ li::hover {
   height: 100% !important;
 }
 
-/* Icono del calendario, primer elemento */
-.guesty-root-element
-  #guesty-search-widget__datepicker
-  [id^="date-picker-wrapper"]::before {
-  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 5V4a1 1 0 1 1 2 0v1h3V4a1 1 0 1 1 2 0v1h3V4a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v2H3V7a2 2 0 0 1 2-2h1ZM3 19v-8h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm5-6a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8Z"/></svg>');
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-}
+
 /* Elementos del calendario */
 .guesty-root-element
   #guesty-search-widget__datepicker
@@ -190,16 +206,7 @@ li::hover {
   justify-content: center !important;
 }
 
-/* Checkout icon */
-.guesty-root-element
-  #guesty-search-widget__datepicker
-  [id^="date-picker-wrapper"]:nth-child(2)::before {
-  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>');
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  vertical-align: middle;
-}
+
 
 .guesty-widget__item.guests-dropdown {
   display: flex !important;
@@ -237,12 +244,6 @@ li::hover {
 }
 
 .lightpick__day.is-available.is-start-date.is-in-range::before {
-  /* content: 'x'; */
-  /* position: absolute; */
-  /* width: 100% !important;
-  height: 100% !important;
-  border-radius: 5rem !important;
-  background: white !important; */
 }
 
 .guesty-root-element.small-size.guesty-widget__container {
@@ -276,30 +277,37 @@ li::hover {
 div.guesty-root-element .selectr-selected::before {
   right: 10% !important;
 }
+div.lightpick__day.is-available.is-in-range{
+  border: 1px solid #4d3b2d !important;
+  border-radius: 0px !important;
+}
+.lightpick__day.is-available.is-in-range::before{
+  background: red !important;
+  z-index: 1000 !important;
+  border-radius: 50% !important;
+}
 
 @media screen and (max-width: 767px) {
   .guesty-widget__container {
     border-radius: 1rem !important;
     font-size: .5rem !important;
-    /* background: pink !important; */
     width: 100% !important;
     max-width: 600px !important;
     height: 100% !important;
-    max-height: 245px !important;
+    max-height: 205px !important;
     margin: 0px !important;
     padding: 0px !important;
+    gap: 0px !important;
   }
   .guesty-root-element .guesty-widget__item {
-    /* background: #000000 !important; */
-    padding: .5rem !important;
+    padding: .6rem !important;
     margin: 0px !important;
     height: 100% !important;
     max-height: 40px !important;
-    /* overflow: hidden !important; */
   }
 
   .guesty-root-element .guesty-widget__item input{
-    font-size: .7rem !important;
+    font-size: .8rem !important;
     padding: 0px !important;
     vertical-align: middle !important;
     display: flex !important;
@@ -322,6 +330,31 @@ div.guesty-root-element .selectr-selected::before {
   [id="guesty-search-widget__datepicker"] {
     padding: .5rem 24px !important;
     width: 100% !important;
+  }
+  .guesty-root-element
+  #guesty-search-widget__datepicker
+  [id^="date-picker-wrapper"]:nth-child(2)::before {
+    width: 15px !important;
+    height: 15px !important;
+  }
+  .guesty-root-element
+  #guesty-search-widget__datepicker
+  [id^="date-picker-wrapper"]:nth-child(2)::before {
+    width: 15px !important;
+    height: 15px !important;
+  }
+  .guesty-root-element
+  #guesty-search-widget__datepicker
+  [id^="date-picker-wrapper"]::before {
+    width: 15px !important;
+    height: 15px !important;
+  }
+  .guesty-root-element .has-selected .selectr-label {
+    font-size: .8rem !important;
+  }
+  section.guesty-root-element.small-size.guesty-widget__container.guesty-widget__item::last-child {
+    height: 25px !important;
+    background: red !important;
   }
 }
 
