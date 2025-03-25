@@ -1,4 +1,4 @@
-/* Last update: 25/03/2025 3:21am */
+/* Last update: 25/03/2025 3:30am */
 
 :root {
   position: relative !important;
@@ -170,9 +170,7 @@ ul {
   padding: 0px !important;
   margin: 0px !important;
 }
-li::hover {
-  background-color: red !important;
-}
+
 
 .guesty-root-element .selectr-selected {
   font-size: 1rem !important;
@@ -247,10 +245,11 @@ li::hover {
 }
 
 .guesty-root-element.small-size.guesty-widget__container {
-  flex-direction: column !important;
-  /* background: red !important; */
   display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-around !important;
   height: 400px !important;
+  padding: .4rem 0 0 0 !important;
 }
 
 @media (max-width: 768px) {
@@ -281,16 +280,12 @@ div.lightpick__day.is-available.is-in-range{
   border: 1px solid #4d3b2d !important;
   border-radius: 0px !important;
 }
-.lightpick__day.is-available.is-in-range::before{
-  background: red !important;
-  z-index: 1000 !important;
-  border-radius: 50% !important;
-}
+
 
 @media screen and (max-width: 767px) {
   .guesty-widget__container {
     border-radius: 1rem !important;
-    font-size: .5rem !important;
+    font-size: 13px !important;
     width: 100% !important;
     max-width: 600px !important;
     height: 100% !important;
@@ -300,14 +295,14 @@ div.lightpick__day.is-available.is-in-range{
     gap: 10px !important;
   }
   .guesty-root-element .guesty-widget__item {
-    padding: .6rem !important;
+    padding: 10px !important;
     margin: 0px !important;
     height: 100% !important;
     max-height: 40px !important;
   }
 
   .guesty-root-element .guesty-widget__item input{
-    font-size: .8rem !important;
+    font-size: 13px !important;
     padding: 0px !important;
     vertical-align: middle !important;
     display: flex !important;
@@ -316,7 +311,7 @@ div.lightpick__day.is-available.is-in-range{
   }
   button.guesty-search-submit-btn {
     background: #000000 !important;
-    font-size: .8rem !important;
+    font-size: 13px !important;
     padding: 0px !important;
     height: 40px !important;
   }
@@ -354,10 +349,13 @@ div.lightpick__day.is-available.is-in-range{
   }
   section.guesty-root-element.small-size.guesty-widget__container.guesty-widget__item::last-child {
     height: 25px !important;
-    background: red !important;
   }
   .guesty-root-element.small-size.guesty-widget__container .guesty-widget__item #guesty-search-widget__datepicker {
     height: 45px !important;
+  }
+  .guesty-root-element.small-size.guesty-widget__container {
+    padding: .4rem 0 0 0 !important;
+    gap: .5rem !important;
   }
 }
 
