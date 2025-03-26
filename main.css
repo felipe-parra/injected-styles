@@ -1,31 +1,31 @@
-/* Last update: 25/03/2025 3:30am */
-
-:root {
-  position: relative !important;
-  height: auto !important;
-  width: 100% !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  margin: 0px auto !important;
-  margin-left: -.3rem !important;
-  background: #444 !important;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 1rem !important;
-  font-weight: 500 !important;  
-}
+/* Last update: 25/03/2025 8:0-pm */
 .guesty-widget__container {
+  box-sizing: border-box !important;
   background: #eeede5 !important;
   width: 100% !important;
-  max-width: 720px !important;
+  max-width: 820px !important;
   height: 70px !important;
   border-radius: 5rem !important;
   padding: 0.5rem 2.5rem !important;
   box-shadow: 0 4px 12px #000000 !important; 
   display: flex !important;
-  align-items: center !important;
   justify-content: center !important;
+  align-items: center !important;
   gap: 1.5rem !important;
+}
+@media all and (max-width: 820px) {
+  .guesty-widget__container {
+    gap: 0rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+
+.guesty-widget__container .guesty-widget__item {
+  display: flex !important;
+  width: 100% !important;
+  margin: 0px auto !important;
+  padding: 0px !important;
 }
 /* Mostrar íconos como parte del texto del botón */
 .selectr-label::before {
@@ -252,7 +252,7 @@ ul {
   padding: .4rem 0 0 0 !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .guesty-widget__item {
     width: 100% !important;
     margin: 0px auto !important;
@@ -282,12 +282,12 @@ div.lightpick__day.is-available.is-in-range{
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 820px) {
   .guesty-widget__container {
     border-radius: 1rem !important;
     font-size: 13px !important;
     width: 100% !important;
-    max-width: 600px !important;
+    max-width: 480px !important;
     height: 100% !important;
     max-height: 225px !important;
     margin: 0px !important;
@@ -359,7 +359,7 @@ div.lightpick__day.is-available.is-in-range{
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
   
   .guesty-widget__item:last-child {
     width: 320px !important;
