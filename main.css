@@ -1,4 +1,4 @@
-/* Last update: 25/03/2025 8:0-pm */
+/* Last update: 25/03/2025 8:54-pm */
 .guesty-widget__container {
   box-sizing: border-box !important;
   background: #eeede5 !important;
@@ -13,6 +13,12 @@
   align-items: center !important;
   gap: 1.5rem !important;
 }
+
+.lightpick__select.lightpick__select-months,
+.lightpick__select.lightpick__select-years{
+  color: #4d3b2d !important;
+}
+
 @media all and (max-width: 820px) {
   .guesty-widget__container {
     gap: 0rem !important;
